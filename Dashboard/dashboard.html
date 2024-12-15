@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="dashboard.css">
+   
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">CA</div>
+        <div class="header-icons">
+            <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+            <!-- <input type="text" placeholder="Search..." class="search-bar"> -->
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search...">
+                <i class="fa fa-search"></i> <!-- Font Awesome search icon -->
+            </div>
+
+            <div class="user-account">
+                <i class="fa-solid fa-user icon"></i>
+                <span class="tooltip-text">User Account</span>
+            </div>
+            
+            <div class="log-off">
+                <i class="fa-solid fa-right-from-bracket icon"></i>
+                <span class="tooltip-text">Logoff</span>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Left Content -->
+        <div class="left-content">
+            <div class="box">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse vero eius distinctio excepturi.
+                    Deleniti dicta neque consequuntur natus tenetur similique temporibus, culpa provident deserunt id
+                    laudantium, iusto ea nam eius exercitationem ipsa odit? Earum, qui. Tempora praesentium hic ex?
+                    Reprehenderit aliquam optio quaerat, quas mollitia accusantium nostrum, unde est explicabo sunt
+                    delectus veritatis? Quo, porro unde dignissimos dolorem excepturi reprehenderit magni fugit
+                    obcaecati atque quod. Blanditiis nulla facilis architecto labore, magnam illum culpa mollitia ipsum
+                    adipisci sapiente, sequi maiores, officiis dolor ullam quidem! Illo temporibus repellendus, quaerat
+                    atque commodi amet accusamus quos dolorem harum ea eius optio dignissimos nostrum deleniti est,
+                    </p>
+                <button class="create-btn">Create a Box</button>
+            </div>
+            <div class="links-box">
+                
+                <button class="action-btn" onclick="redirectTo('#link1')">Button 1</button>
+                <button class="action-btn" onclick="redirectTo('#link2')">Button 2</button>
+                <button class="action-btn" onclick="redirectTo('#link3')">Button 3</button>
+                <button class="action-btn" onclick="redirectTo('#link4')">Button 4</button>
+                <button class="action-btn" onclick="redirectTo('#link5')">Button 5</button>
+            </div>
+        </div>
+
+        <!-- Right Content -->
+        <div class="right-sidebar">
+            
+            <ul>
+                <li><a href="#important1"><i class="fa-solid fa-up-right-from-square"></i>Link 1</a></li>
+                <li><a href="#important2"><i class="fa-solid fa-up-right-from-square"></i>Link 2</a></li>
+                <li><a href="#important3"><i class="fa-solid fa-up-right-from-square"></i>Link 3</a></li>
+                <li><a href="#important4"><i class="fa-solid fa-up-right-from-square"></i>Link 4</a></li>
+                <li><a href="#important5"><i class="fa-solid fa-up-right-from-square"></i>Link 5</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
