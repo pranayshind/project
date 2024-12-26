@@ -9,33 +9,39 @@
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="dashboard.css">
-   
+
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
         <div class="logo">CA</div>
         <div class="header-icons">
-            <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
-            <!-- <input type="text" placeholder="Search..." class="search-bar"> -->
-            <div class="search-container">
-                <input type="text" id="search" placeholder="Search...">
-                <i class="fa fa-search"></i> <!-- Font Awesome search icon -->
-            </div>
+            <!-- Navbar Icons -->
+            <div class="nav-icons">
 
-            <div class="user-account">
-                <i class="fa-solid fa-user icon"></i>
-                <span class="tooltip-text">User Account</span>
+                <div class="search-container">
+                    <!-- <input type="text" id="search" placeholder="Search..."> -->
+
+                    <i class="fa fa-search" id="search-icon"></i>
+                    <input type="text" id="search-bar" placeholder="Search...">
+                    <span class="tooltip-text" id="search">Search</span>
+                </div>
+
+                <div class="user-account">
+                    <i class="fa-solid fa-user icon"></i>
+                    <span class="tooltip-text">User Account</span>
+                </div>
+
+                <div class="log-off">
+                    <i class="fa-solid fa-right-from-bracket icon"></i>
+                    <span class="tooltip-text" id="log-off">Logoff</span>
+                </div>
             </div>
-            
-            <div class="log-off">
-                <i class="fa-solid fa-right-from-bracket icon"></i>
-                <span class="tooltip-text">Logoff</span>
-            </div>
-            
-        </div>
-    </header>
+    </nav>
+
 
     <!-- Main Content -->
     <div class="main-content">
@@ -43,19 +49,27 @@
         <div class="left-content">
             <div class="box">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam esse vero eius distinctio excepturi.
-                    Deleniti dicta neque consequuntur natus tenetur similique temporibus, culpa provident deserunt id
-                    laudantium, iusto ea nam eius exercitationem ipsa odit? Earum, qui. Tempora praesentium hic ex?
-                    Reprehenderit aliquam optio quaerat, quas mollitia accusantium nostrum, unde est explicabo sunt
-                    delectus veritatis? Quo, porro unde dignissimos dolorem excepturi reprehenderit magni fugit
-                    obcaecati atque quod. Blanditiis nulla facilis architecto labore, magnam illum culpa mollitia ipsum
-                    adipisci sapiente, sequi maiores, officiis dolor ullam quidem! Illo temporibus repellendus, quaerat
-                    atque commodi amet accusamus quos dolorem harum ea eius optio dignissimos nostrum deleniti est,
-                    </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias praesentium totam sed esse, veritatis
+                    expedita qui dolor libero, tempore aperiam illum consequatur accusantium dignissimos ea corrupti
+                    adipisci perspiciatis, perferendis eos beatae quae molestias vero quos? Minus neque sint iste rem
+                    tempora. Eaque ab at voluptatum eligendi unde qui. Non adipisci quia veniam? Molestiae nostrum
+                    similique beatae quaerat doloribus assumenda dolorum, excepturi iste, suscipit illo natus placeat
+                    impedit quidem blanditiis at sed earum saepe quisquam necessitatibus odio. Dignissimos quibusdam
+                    saepe sapiente veniam pariatur, repudiandae blanditiis neque facilis at dolor minus, commodi, libero
+                    rem totam beatae adipisci atque. Debitis soluta maxime ullam at eos non voluptate deleniti earum
+                    dignissimos? Omnis necessitatibus repellendus dolorum eius quo? Fugit magnam voluptatem obcaecati a
+                    iusto dignissimos earum ea exercitationem provident omnis, eaque nisi quos iste esse nulla aliquam
+                    quidem nemo ullam repudiandae voluptas aperiam molestias deleniti odio! Molestias illum
+                    necessitatibus asperiores, eum recusandae dolor reprehenderit velit incidunt repudiandae? Ducimus,
+                    possimus facilis, suscipit quaerat ad blanditiis itaque at ut deserunt odit sapiente vero veniam
+                    repellendus id porro? Ex ipsam debitis sapiente recusandae omnis ipsa expedita excepturi culpa
+                    veritatis tempore? Ab voluptatem ratione tempore laboriosam placeat voluptate exercitationem quam
+                    officiis et natus, architecto pariatur cupiditate rem recusandae! Minus!
+                </p>
                 <button class="create-btn">Create a Box</button>
             </div>
             <div class="links-box">
-                
+
                 <button class="action-btn" onclick="redirectTo('#link1')">Button 1</button>
                 <button class="action-btn" onclick="redirectTo('#link2')">Button 2</button>
                 <button class="action-btn" onclick="redirectTo('#link3')">Button 3</button>
@@ -66,16 +80,18 @@
 
         <!-- Right Content -->
         <div class="right-sidebar">
-            
+
             <ul>
-                <li><a href="#important1"><i class="fa-solid fa-up-right-from-square"></i>Link 1</a></li>
-                <li><a href="#important2"><i class="fa-solid fa-up-right-from-square"></i>Link 2</a></li>
-                <li><a href="#important3"><i class="fa-solid fa-up-right-from-square"></i>Link 3</a></li>
-                <li><a href="#important4"><i class="fa-solid fa-up-right-from-square"></i>Link 4</a></li>
-                <li><a href="#important5"><i class="fa-solid fa-up-right-from-square"></i>Link 5</a></li>
+                <li><a href="#important1">Link 1</a></li>
+                <li><a href="#important2">Link 2</a></li>
+                <li><a href="#important3">Link 3</a></li>
+                <li><a href="#important4">Link 4</a></li>
+                <li><a href="#important5">Link 5</a></li>
             </ul>
         </div>
     </div>
+
+    <script src="dashboard.js"></script>
 </body>
 
 </html>

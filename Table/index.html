@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
+     <!-- Navbar -->
+     <nav class="navbar">
         <!-- Hamburger Menu -->
         <div class="hamburger-menu" id="hamburger">
             <i class="fa-solid fa-bars"></i>
@@ -17,8 +18,12 @@
         <div class="nav-icons">
             
             <div class="search-container">
-                <input type="text" id="search" placeholder="Search...">
-                <i class="fa fa-search"></i> 
+                <!-- <input type="text" id="search" placeholder="Search..."> -->
+                
+                <i class="fa fa-search"  id="search-icon"></i> 
+                <input type="text" id="search-bar" placeholder="Search...">
+                <span class="tooltip-text" id="search">Search</span>
+         
             </div>
 
             <div class="user-account">
@@ -28,7 +33,7 @@
             
             <div class="log-off">
                 <i class="fa-solid fa-right-from-bracket icon"></i>
-                <span class="tooltip-text">Logoff</span>
+                <span class="tooltip-text" id="log-off">Logoff</span>
             </div>
         </div>
     </nav>
